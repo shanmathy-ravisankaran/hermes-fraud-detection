@@ -175,6 +175,3 @@ The final evaluator writes aggregate-only reports to `docs/final_evaluation/`:
 - SHAP contributions describe model behavior, not fraud causes.
 - Future work could add authenticated users, protected model/data registries, calibrated scores,
   robust monitoring alerts, human-review feedback loops, and governed deployment workflows.
-
-For presentation material, see the [portfolio overview](docs/portfolio_overview.md),
-[demo walkthrough](docs/demo_walkthrough.md), and [interview guide](docs/interview_explanation.md).
