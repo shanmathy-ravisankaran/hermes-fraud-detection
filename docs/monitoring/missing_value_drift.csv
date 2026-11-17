@@ -1,0 +1,9 @@
+feature,reference_missing_rate,observed_missing_rate,missing_rate_delta,missing_severity
+TransactionAmt,0.0,0.0,0.0,low
+TransactionAmtLog,0.0,0.0,0.0,low
+TransactionHour,0.0,0.0,0.0,low
+TransactionDay,0.0,0.0,0.0,low
+ProductCD,0.0,0.0,0.0,low
+card4,0.0,0.0,0.0,low
+card6,0.0,0.0,0.0,low
+P_emaildomain,0.0,0.0,0.0,low

@@ -1,0 +1,21 @@
+{
+  "alert_rate": 0.054413474672898254,
+  "dataset": "validation.csv",
+  "decision_threshold": 0.7593,
+  "evaluation_period": "chronological validation split",
+  "f1_score": 0.2749936402950903,
+  "false_negative_count": 1961,
+  "false_positive_count": 3739,
+  "fraud_capture_rate": 0.35535831689677844,
+  "fraud_count": 3042,
+  "model_name": "XGBoost",
+  "observed_fraud_rate": 0.03434145019812375,
+  "pr_auc": 0.1862181805658678,
+  "precision": 0.22427385892116183,
+  "recall": 0.35535831689677844,
+  "roc_auc": 0.7873156066571216,
+  "score_calibrated": false,
+  "transaction_count": 88581,
+  "true_negative_count": 81800,
+  "true_positive_count": 1081
+}

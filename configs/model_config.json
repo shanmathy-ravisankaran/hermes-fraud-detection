@@ -1,0 +1,20 @@
+
+{
+  "model_name": "XGBoost",
+  "model_version": "1.0.0",
+  "model_file": "hermes_xgboost.joblib",
+  "decision_threshold": 0.7593,
+  "feature_columns": [
+    "TransactionAmt",
+    "TransactionAmtLog",
+    "TransactionHour",
+    "TransactionDay",
+    "ProductCD",
+    "card4",
+    "card6",
+    "P_emaildomain"
+  ],
+  "score_calibrated": false,
+  "dataset": "IEEE-CIS Fraud Detection",
+  "environment": "development"
+}

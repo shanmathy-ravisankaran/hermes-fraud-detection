@@ -1,0 +1,3 @@
+model,true_negative_count,false_positive_count,false_negative_count,true_positive_count
+Logistic Regression,80340,5158,2224,859
+XGBoost,81342,4156,2091,992

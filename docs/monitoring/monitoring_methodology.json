@@ -1,0 +1,35 @@
+{
+  "categorical_drift": {
+    "metric": "total variation distance",
+    "thresholds": {
+      "high": 0.2,
+      "moderate": 0.1
+    }
+  },
+  "decision_threshold": 0.7593,
+  "generated_at_utc": "2026-11-17T03:39:20.372149+00:00",
+  "limitations": [
+    "Thresholds are heuristic monitoring indicators, not statistically validated alerts.",
+    "Results are historical offline validation monitoring, not production performance.",
+    "Model scores are uncalibrated and are not fraud probabilities.",
+    "The held-out test split is not used by this monitoring command."
+  ],
+  "missing_value_drift": {
+    "metric": "absolute missing-rate change",
+    "thresholds": {
+      "high": 0.05,
+      "moderate": 0.02
+    }
+  },
+  "numerical_drift": {
+    "metric": "population stability index",
+    "thresholds": {
+      "high": 0.25,
+      "moderate": 0.1
+    }
+  },
+  "observed_dataset": "validation.csv",
+  "reference_dataset": "train.csv",
+  "report_scope": "historical offline monitoring only",
+  "time_windows": 6
+}

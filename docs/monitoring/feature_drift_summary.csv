@@ -1,0 +1,9 @@
+feature,reference_missing_rate,observed_missing_rate,missing_rate_delta,missing_severity,feature_type,psi,distribution_distance,unseen_category_rate,distribution_severity,severity
+TransactionAmt,0.0,0.0,0.0,low,numerical,0.008241180564073927,,,low,low
+TransactionAmtLog,0.0,0.0,0.0,low,numerical,0.008241180564073927,,,low,low
+TransactionHour,0.0,0.0,0.0,low,numerical,0.012654114074535202,,,low,low
+TransactionDay,0.0,0.0,0.0,low,numerical,12.424374638816914,,,high,high
+ProductCD,0.0,0.0,0.0,low,categorical,,0.09542597816042456,0.0,low,low
+card4,0.0,0.0,0.0,low,categorical,,0.011872104143584491,0.0,low,low
+card6,0.0,0.0,0.0,low,categorical,,0.053938525997996985,0.0,low,low
+P_emaildomain,0.0,0.0,0.0,low,categorical,,0.024820704859313585,0.0,low,low

@@ -1,0 +1,59 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environment
+.venv/
+venv/
+*.egg-info/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local datasets
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Local SQLite data and SQLite journal files
+data/database/*.db
+data/database/*.db-*
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Temporary uploads, logs, and local working files
+data/uploads/
+uploads/
+logs/
+*.log
+tmp/
+temp/
+*.tmp
+
+# Trained models
+models/*
+!models/.gitkeep
+
+# MLflow artifacts
+mlruns/
+mlartifacts/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

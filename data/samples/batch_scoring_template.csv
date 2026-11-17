@@ -1,0 +1,5 @@
+source_row_id,transaction_amount,transaction_dt,product_cd,card4,card6,email_domain
+demo-001,45.50,10400000,W,visa,debit,gmail.com
+demo-002,820.00,10403600,C,mastercard,credit,yahoo.com
+demo-003,5800.00,10407200,W,visa,debit,gmail.com
+demo-004,125.75,10410800,R,discover,credit,missing
