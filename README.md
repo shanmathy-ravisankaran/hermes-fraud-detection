@@ -1,4 +1,11 @@
-# HERMES Fraud Detection & Risk Monitoring Platform
+# HERMES — Fraud Detection & Risk Monitoring
+
+![Python](https://img.shields.io/badge/Python-3.11-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.38+-FF4B4B?logo=streamlit&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-2.1+-337AB7)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-1.5+-F7931E?logo=scikitlearn&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-local%20workflow-003B57?logo=sqlite&logoColor=white)
 
 HERMES is a local, research-oriented fraud-risk demonstration built around historical IEEE-CIS
 transaction data. It shows an end-to-end workflow: chronological data preparation, model
@@ -25,7 +32,8 @@ historical labeled data.
 - SHAP TreeExplainer for local XGBoost explanations
 - pytest and Ruff for automated verification and linting
 
-See [architecture documentation](docs/architecture.md) for the component diagram.
+See [architecture documentation](docs/architecture.md) for the component diagram, or view the
+[separate Mermaid system architecture](docs/images/architecture/system_architecture.md).
 
 ## Data pipeline and split strategy
 
@@ -74,15 +82,15 @@ preprocessing pipelines are used directly for both single and batch inference.
 The final evaluator uses the untouched chronological `data/processed/test.csv` split with the
 fixed thresholds above.
 
-| Model | PR-AUC | F1 | Precision | Fraud capture | Alerts |
-|---|---:|---:|---:|---:|---:|
-| Logistic Regression | 0.1356 | 0.1888 | 0.1428 | 27.86% | 6,017 |
-| XGBoost | 0.1586 | 0.2410 | 0.1927 | 32.18% | 5,148 |
+| Model | Fixed threshold | PR-AUC | Precision | Fraud capture | F1 | Alerts |
+|---|---:|---:|---:|---:|---:|---:|
+| Logistic Regression | 0.85 | 0.1356 | 0.1428 | 27.86% | 0.1888 | 6,017 |
+| XGBoost | 0.7593424320220947 | 0.1586 | 0.1927 | 32.18% | 0.2410 | 5,148 |
 
 These values document one historical held-out evaluation, not expected production performance.
 Aggregate reports are available under [docs/final_evaluation](docs/final_evaluation).
 
-## Application capabilities
+## Seven local dashboard modules
 
 The Streamlit app includes:
 
@@ -93,6 +101,8 @@ The Streamlit app includes:
 - **Model Monitoring** — displays historical offline drift and validation-performance reports.
 - **Batch Scoring** — validates and scores bounded CSV uploads without persisting investigations.
 - **Final Model Evaluation** — presents aggregate held-out test comparison reports.
+
+Interactive application demonstration available upon request.
 
 ## API endpoints
 
@@ -108,7 +118,7 @@ The Streamlit app includes:
 | `GET /investigations/{id}/history` | Retrieve audit history. |
 | `GET /investigations/{id}/explanation` | Explain the stored transaction without mutation. |
 
-Open local Swagger UI at `http://127.0.0.1:8000/docs` after starting FastAPI.
+FastAPI's interactive documentation is available after the local API starts.
 
 ## Local setup (Windows PowerShell)
 
